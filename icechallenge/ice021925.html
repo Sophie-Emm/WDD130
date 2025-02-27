@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        h1{
+            z-index: 1;
+            grid-column: 1/3;
+            grid-row: 1/2;
+            font-size: 100px;
+            width:100%;
+            justify-items: center;
+            text-align: center;
+            letter-spacing: .2en;
+
+        }
+
+        h2{
+            font-size: 80px;
+            letter-spacing: 10px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            text-align: center;
+            color: maroon;
+
+        }
+
+        img{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            width: 100%;
+        }
+        #greybox{
+            background-color: lightslategray;
+            grid-column: 2/3;
+            grid-row: 1/3;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1> Tart & Sweat</h1>
+        <img class="Cherry" src="images/w06_cherries.png" 
+        <h2>Cherry</h2>
+
+
+    </div>
+    
+</body>
+</html>

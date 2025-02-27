@@ -27,22 +27,24 @@ Fonts are separated by a & */
   --nav-hover-background-color: #8986e4;
 }
 
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
+/* CSS Reset */
 body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
   text-align: center;
   background-color: #fffafa;
 }
+h2 {
+  margin: 0;
+}
+
 img {
   display: block;
   margin: 0 auto;
   max-width: 300px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
@@ -55,6 +57,7 @@ hr {
   margin: 35px 0;
   background: var(--accent1-color);
 }
+
 header {
   padding: 1em;
   text-align: center;
@@ -64,11 +67,13 @@ header {
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
+
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;
@@ -98,21 +103,19 @@ p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
 }
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav  {
   list-style-type: none;
   display: flex;
 }
 nav a {
-  padding:1em;
+  padding: 35px;
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -121,10 +124,10 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
 .sitemap {
   display: grid;
   justify-content: center;
-
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
@@ -135,18 +138,7 @@ nav a:hover {
 .sitemap > div {
   text-align: center;
 }
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
+.sm-home, .sm-page2, .sm-page3 {
   background-color: #ccc;
   line-height: 3em;
 }
@@ -164,13 +156,48 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
 #logo{
   width: 80px;
+  padding-top: 5px;
 }
 #background{
   height: 725px;
 }
 .social img{
-height: 25px;
-width: 25px;
+  height: 25px;
+  width: 25px;
+  padding-top: 15px;
+}
+
+.home-title {
+  font-size: 2em;
+  margin-top: 10px;
+}
+.book, .join {
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.msg {
+  padding: 35px;
+  line-height: 1.5em;
+}
+.msg p {
+  font-size: 0.8em;
+  padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+.card-img {
+  border: 10px solid #1a1867;
+}
+main section img {
+  box-sizing: border-box;
 }
